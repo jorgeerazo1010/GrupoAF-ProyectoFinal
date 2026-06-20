@@ -98,20 +98,20 @@ INSERT INTO ejemplar (isbn, estado_disponibilidad, ubicacion_estante) VALUES
 
 -- Miembros de la comunidad habilitados para prestar libros
 INSERT INTO socio (dui, nombre, direccion, telefono, correo, fecha_registro) VALUES
-    ('01234567-8', 'Ana María López',      'Col. Escalón, San Salvador',      '7001-1001', 'ana.lopez@correo.com',          '2023-03-10'),
-    ('02345678-9', 'Carlos Ernesto Rivas', 'Soyapango, San Salvador',         '7002-2002', 'carlos.rivas@correo.com',       '2023-05-22'),
-    ('03456789-0', 'Sofía Beatriz Morán',  'Santa Ana, Santa Ana',            '7003-3003', 'sofia.moran@correo.com',        '2023-07-15'),
-    ('04567890-1', 'Diego Alejandro Cruz', 'Antiguo Cuscatlán, La Libertad',  '7004-4004', 'diego.cruz@correo.com',         '2023-09-01'),
-    ('05678901-2', 'Laura Guadalupe Vega', 'Mejicanos, San Salvador',         '7005-5005', 'laura.vega@correo.com',         '2024-01-20'),
-    ('06789012-3', 'Roberto José Pineda',  'San Miguel, San Miguel',          '7006-6006', 'roberto.pineda@correo.com',     '2024-02-14'),
-    ('07890123-4', 'Valeria Concepción',   'Usulután, Usulután',              '7007-7007', 'valeria.concepcion@correo.com', '2024-04-05'),
-    ('08901234-5', 'Marco Antonio Pérez',  'Zacatecoluca, La Paz',            '7008-8008', 'marco.perez@correo.com',        '2024-06-18');
+    ('01234567-8', 'Ana María López',      'Col. Escalón, San Salvador',      '7001-1001', 'ana.lopez@correo.com',          '2024-03-10'),
+    ('02345678-9', 'Carlos Ernesto Rivas', 'Soyapango, San Salvador',         '7002-2002', 'carlos.rivas@correo.com',       '2024-05-22'),
+    ('03456789-0', 'Sofía Beatriz Morán',  'Santa Ana, Santa Ana',            '7003-3003', 'sofia.moran@correo.com',        '2024-07-15'),
+    ('04567890-1', 'Diego Alejandro Cruz', 'Antiguo Cuscatlán, La Libertad',  '7004-4004', 'diego.cruz@correo.com',         '2024-09-01'),
+    ('05678901-2', 'Laura Guadalupe Vega', 'Mejicanos, San Salvador',         '7005-5005', 'laura.vega@correo.com',         '2025-01-20'),
+    ('06789012-3', 'Roberto José Pineda',  'San Miguel, San Miguel',          '7006-6006', 'roberto.pineda@correo.com',     '2025-02-14'),
+    ('07890123-4', 'Valeria Concepción',   'Usulután, Usulután',              '7007-7007', 'valeria.concepcion@correo.com', '2025-04-05'),
+    ('08901234-5', 'Marco Antonio Pérez',  'Zacatecoluca, La Paz',            '7008-8008', 'marco.perez@correo.com',        '2025-06-18');
 
 -- Personal operativo de la biblioteca
 INSERT INTO empleado (nombre_empleado, cargo, correo, fecha_registro) VALUES
-    ('María Teresa Fuentes',  'Bibliotecaria Jefe', 'teresa.fuentes@biblioteca.gob.sv',  '2020-01-15'),
-    ('José Antonio Herrera',  'Auxiliar',           'jose.herrera@biblioteca.gob.sv',    '2021-03-01'),
-    ('Karla Vanessa Orellana','Auxiliar',           'karla.orellana@biblioteca.gob.sv',  '2022-06-10');
+    ('María Teresa Fuentes',  'Bibliotecaria Jefe', 'teresa.fuentes@biblioteca.gob.sv',  '2021-01-15'),
+    ('José Antonio Herrera',  'Auxiliar',           'jose.herrera@biblioteca.gob.sv',    '2022-03-01'),
+    ('Karla Vanessa Orellana','Auxiliar',           'karla.orellana@biblioteca.gob.sv',  '2023-06-10');
 
 -- ------------------------------------------------------------
 -- 4. OPERACIONES E HISTORIAL
@@ -120,21 +120,21 @@ INSERT INTO empleado (nombre_empleado, cargo, correo, fecha_registro) VALUES
 -- Historial de préstamos: Incluye casos de préstamos activos y 
 -- finalizados para validar las consultas de métricas.
 INSERT INTO prestamo (id_ejemplar, id_socio, id_empleado_salida, estado_prestamo, fecha_salida, fecha_limite) VALUES
-    (1,  1, 1, 'Activo',   '2025-06-01 09:00:00', '2025-06-15 09:00:00'),
-    (5,  2, 2, 'Devuelto', '2025-05-01 10:00:00', '2025-05-15 10:00:00'),
-    (12, 3, 1, 'Devuelto', '2025-04-01 08:00:00', '2025-04-15 08:00:00'),
-    (17, 4, 3, 'Activo',   '2025-06-05 11:00:00', '2025-06-19 11:00:00'),
-    (2,  5, 2, 'Activo',   '2025-06-10 14:00:00', '2025-06-24 14:00:00'),
-    (6,  6, 1, 'Devuelto', '2025-05-10 09:00:00', '2025-05-24 09:00:00'),
-    (14, 1, 3, 'Activo',   '2025-06-08 10:00:00', '2025-06-22 10:00:00'),
-    (10, 7, 2, 'Activo',   '2025-06-12 16:00:00', '2025-06-26 16:00:00');
+    (1,  1, 1, 'Activo',   '2026-06-01 09:00:00', '2026-06-15 09:00:00'),
+    (5,  2, 2, 'Devuelto', '2026-05-01 10:00:00', '2026-05-15 10:00:00'),
+    (12, 3, 1, 'Devuelto', '2026-04-01 08:00:00', '2026-04-15 08:00:00'),
+    (17, 4, 3, 'Activo',   '2026-06-05 11:00:00', '2026-06-19 11:00:00'),
+    (2,  5, 2, 'Activo',   '2026-06-10 14:00:00', '2026-06-24 14:00:00'),
+    (6,  6, 1, 'Devuelto', '2026-05-10 09:00:00', '2026-05-24 09:00:00'),
+    (14, 1, 3, 'Activo',   '2026-06-08 10:00:00', '2026-06-22 10:00:00'),
+    (10, 7, 2, 'Activo',   '2026-06-12 16:00:00', '2026-06-26 16:00:00');
 
 -- Registro de recepciones físicas de los préstamos devueltos.
 -- Nota: La devolución del préstamo 3 se realiza fuera de tiempo.
 INSERT INTO devolucion (id_prestamo, id_empleado_recepcion, fecha_recepcion) VALUES
-    (2, 2, '2025-05-13 10:30:00'),
-    (3, 1, '2025-04-25 09:00:00'), -- Entrega con 10 días de retraso
-    (6, 3, '2025-05-20 11:00:00');
+    (2, 2, '2026-05-13 10:30:00'),
+    (3, 1, '2026-04-25 09:00:00'), -- Entrega con 10 días de retraso
+    (6, 3, '2026-05-20 11:00:00');
 
 -- Inserción manual de multa para pruebas (En producción es generada por Trigger)
 INSERT INTO multa (id_devolucion, dias_retraso, monto_acumulado, estado_multa) VALUES
@@ -146,7 +146,15 @@ INSERT INTO multa (id_devolucion, dias_retraso, monto_acumulado, estado_multa) V
 
 -- Apartados de libros solicitados por los socios
 INSERT INTO reserva (isbn, id_socio, fecha_solicitud, estado_reserva) VALUES
-    ('978-84-9999-102-3', 8, '2025-06-11 08:00:00', 'Activa'),
-    ('978-84-339-7428-5', 3, '2025-06-09 10:00:00', 'Activa'),
-    ('978-84-376-0495-4', 2, '2025-05-20 09:00:00', 'Completada'),
-    ('978-84-376-0496-1', 5, '2025-05-25 14:00:00', 'Cancelada');
+    ('978-84-9999-102-3', 8, '2026-06-11 08:00:00', 'Activa'),
+    ('978-84-339-7428-5', 3, '2026-06-09 10:00:00', 'Activa'),
+    ('978-84-376-0495-4', 2, '2026-05-20 09:00:00', 'Completada'),
+    ('978-84-376-0496-1', 5, '2026-05-25 14:00:00', 'Cancelada');
+
+
+-- ============================================================
+-- PROYECTO FINAL — BASES DE DATOS
+-- Sistema de Gestión de Biblioteca
+-- Script de consultas SQL
+
+--------------------------
